@@ -25,20 +25,19 @@ public class Menu {
                         exit = true;
                     }
                     case "1" -> {
-                        Input.input();
+                        PriceInput.price();
                     }
                     case "2" -> {
                         MinMax.minMax();
                     }
                     case "3" -> {
-                        Sort.sort();
+                        PrintSorted.printSorted();
                     }
                     case "4" -> {
-                        BestCharge.bestCharge();
+                        BestCharge.findBestCharge();
                     }
                     default -> {
                         System.out.println("Ogiltigt val försök igen!");
-                        menu();
                     }
                 }
             }
